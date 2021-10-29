@@ -35,3 +35,22 @@ header a{
     padding: 0.4vw;
     border-radius: 1vh;
 }
+
+
+main {
+    margin: 4.5vh 2vw;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    min-width: 600px;
+    min-height: 950px;
+}
+.block-img {
+    /* position: relative; */
+    margin: 0.3vw 0.3vh;  
+    min-height: 200px;
+    min-width: 250px;
+}
+/* .full-name {
+
+} */

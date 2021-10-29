@@ -46,11 +46,17 @@ main {
     min-height: 950px;
 }
 .block-img {
-    /* position: relative; */
-    margin: 0.3vw 0.3vh;  
-    min-height: 200px;
-    min-width: 250px;
+    position: relative;
+    margin: 0.45vh 0.3vw;
+    height: 175px;
+    width: 250px
 }
-/* .full-name {
 
-} */
+.block-img-fullname {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    background-color: rgba(211,211,211,0.4);
+    color: white;
+    padding: 0.35vh 0.35vw;
+}

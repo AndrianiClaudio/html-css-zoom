@@ -1,5 +1,5 @@
 :root {
-    --grey-color: #4A4A4A;
+    --grey-color: #222222;
 }
 * {
     margin: 0;
@@ -29,6 +29,12 @@ a:visited{
     color: white;
 }
 
+header{
+    position: fixed;
+    top: 0.5vh;
+    right: 0.5vw;
+    z-index: 150;
+}
 header .btn {
     display: inline-block;
     background-color: var(--grey-color);
@@ -42,7 +48,7 @@ header a{
     border-radius: 1vh;
 }
 main {
-    margin: 4.5vh 2vw;
+    margin: 8.5vh 2vw;
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
@@ -66,26 +72,55 @@ main {
 }
 .footer-bar {
     display: flex;
+    z-index: 555;
     position: fixed;
-    padding: 8px;
+    padding-left: 8px;
     bottom: 0;
-    height: 60px;
+    height: 70px;
     width:100%;
     background-color: var(--grey-color);
     justify-content: space-between;
 }
-.left-bar {
+
+.left-bar,
+.right-bar {
     display: flex;
-    background-color: blue;
-    align-items: baseline;
-      justify-content: center;
+    flex-direction: space-around;
+    align-items: center;
+    column-gap: 0.8vw;
 }
+
 .vertical {
     display: flex;
+    justify-content: center;
+    row-gap: 7px;
     flex-direction: column;
     text-align: center;
+    height: 100%;
 }
-.vertical i {
-    font-size: 28px;
-   
+
+.size-27 {
+    font-size: 27px;
+}
+.footer-bar .left-bar > i {
+    font-size: 12px;
+}
+.center-bar {
+    height: 54px;
+    width: 20px;
+    background-color: burlywood;
+}
+.footer-bar .btn {
+    height: 100%;
+    background-color: #4a4a4ad3;
+    padding: 0;
+    text-align: center;
+    width: 7%;
+    min-width: 100px;
+}
+span.red {
+    display: inline-block;
+    color: red;
+    font-size: 14px;
+    line-height: 70px;
 }

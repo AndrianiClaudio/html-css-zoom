@@ -126,3 +126,11 @@ span.red {
     line-height: 70px;
 }
 /* /FOOTER */
+
+.fas.fa-chevron-up:active .menu{
+    position: fixed;
+    bottom: calc(35px + 0.5vw);
+    height: 150px;
+    width: 350px;
+    background-color: lightgrey;
+}

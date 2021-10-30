@@ -1,25 +1,20 @@
 :root {
     --grey-color: #222222;
 }
+/* GENERALE */
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
-
-
-
 body {
     background-color: black;
     color: white;
 }
-
-.header-bar {
-    display: flex;
-    margin: 0.5vw;
-    justify-content: flex-end;
+main,.footer-bar {
+    min-width: 970px;
 }
-
+/* LINK */
 a {
     text-decoration: none;
 }
@@ -28,25 +23,37 @@ a:hover,
 a:visited{
     color: white;
 }
-
-header{
+/* /LINK */
+/* GENERALE */
+/* HEADER */
+.header-bar {
+    display: flex;
+    margin: 0.5vw;
+    justify-content: flex-end;
+}
+.header-bar{
     position: fixed;
     top: 0.5vh;
     right: 0.5vw;
     z-index: 150;
 }
-header .btn {
+.header-bar a,
+.header-bar .btn {
+    border-radius: 1vh;
+}
+.header-bar a{
+    display: inline-block;
+    padding: 0.4vw;
+}
+.header-bar .btn {
     display: inline-block;
     background-color: var(--grey-color);
     font-size: 1.7vh;
     margin-left: 0.2vw;
-    border-radius: 1vh;
 }
-header a{
-    display: inline-block;
-    padding: 0.4vw;
-    border-radius: 1vh;
-}
+/* /HEADER */
+/* MAIN */
+/* /MAIN */
 main {
     margin: 8.5vh 2vw;
     display: flex;
@@ -54,18 +61,12 @@ main {
     justify-content: center;
     min-height: 950px;
 }
-main,.footer-bar {
-    min-width: 970px;
-
-}
 .block-img {
     position: relative;
     margin: 0.45vh 0.3vw;
     height: 175px;
     width: 250px
 }
-
-
 .block-img-fullname {
     position: absolute;
     bottom: 0;
@@ -73,19 +74,23 @@ main,.footer-bar {
     background-color: rgba(211,211,211,0.4);
     padding: 0.35vh 0.35vw;
 }
-.footer-bar {
-    display: flex;
-    z-index: 555;
-    position: fixed;
-    padding-left: 8px;
-    bottom: 0;
-    height: 70px;
-    width:100vw;
-    background-color: var(--grey-color);
-    justify-content: space-between;
-    overflow-x: visible;
+
+/* FOOTER */
+.size-27 {
+    font-size: 1.7vw;
 }
 
+.footer-bar {
+    position: fixed;
+    background-color: var(--grey-color);
+    z-index: 555;
+    padding-left: 8px;
+    height: 70px;
+    width:100vw;
+    display: flex;
+    bottom: 0;left: 0;
+    justify-content: space-between;
+}
 .left-bar,
 .center-bar {
     display: flex;
@@ -96,21 +101,15 @@ main,.footer-bar {
 }
 .vertical {
     display: flex;
-    justify-content: center;
-    row-gap: 7px;
+    justify-content: space-evenly;
     flex-direction: column;
     text-align: center;
     height: 100%;
-}
-
-.size-27 {
-    font-size: 1.7vw;
 }
 .footer-bar .left-bar > i,
 .footer-bar .center-bar > i {
     font-size: 1vw;
 }
-
 .footer-bar .btn {
     height: 100%;
     background-color: #4a4a4ad3;
@@ -126,3 +125,4 @@ span.red {
     width: 100%;
     line-height: 70px;
 }
+/* /FOOTER */
